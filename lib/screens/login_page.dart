@@ -6,7 +6,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:prop_olx/base/app_events.dart';
 import 'package:prop_olx/model/login_response.dart';
 import 'package:prop_olx/screens/otp_verification_screen.dart';
-import 'package:prop_olx/screens/property_listscreen.dart';
 import 'package:prop_olx/screens/signup_page.dart';
 import 'package:prop_olx/utils/getx_storage.dart';
 import 'package:prop_olx/utils/preferences_constant.dart';

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:prop_olx/base/app_events.dart';
 import 'package:prop_olx/model/otp_response.dart';
-import 'package:prop_olx/screens/property_listscreen.dart';
+import 'package:prop_olx/screens/dash_board.dart';
 import 'package:prop_olx/utils/util.dart';
 import 'package:shimmer/shimmer.dart';
 
@@ -251,7 +251,7 @@ class OtpVerificationScreenState extends State<OtpVerificationScreen>
   getPropertyListScreen() {
     Navigator.pushReplacement(
       context,
-      MaterialPageRoute(builder: (context) => const PropertyListScreen()),
+      MaterialPageRoute(builder: (context) =>   DashBoard()),
     );
   }
 

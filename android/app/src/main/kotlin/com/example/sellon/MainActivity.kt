@@ -1,4 +1,4 @@
-package com.example.property_olx
+package com.example.sellon
 
 import io.flutter.embedding.android.FlutterActivity
 

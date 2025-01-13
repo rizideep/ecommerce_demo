@@ -2,8 +2,7 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:prop_olx/screens/login_page.dart';
-import 'package:prop_olx/screens/property_listscreen.dart';
+import 'package:prop_olx/screens/dash_board.dart';
 import 'package:prop_olx/utils/getx_storage.dart';
 import 'package:prop_olx/utils/preferences_constant.dart';
 import 'package:prop_olx/utils/util.dart';
@@ -84,12 +83,12 @@ class _SplashState extends State<Splash> with TickerProviderStateMixin {
     if (userId != null) {
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => const PropertyListScreen()),
+        MaterialPageRoute(builder: (context) =>   DashBoard()),
       );
     } else {
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => const LoginPage()),
+        MaterialPageRoute(builder: (context) =>   DashBoard()),
       );
     }
   }
