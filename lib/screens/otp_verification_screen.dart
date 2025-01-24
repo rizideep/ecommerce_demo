@@ -249,7 +249,7 @@ class OtpVerificationScreenState extends State<OtpVerificationScreen>
   }
 
   getPropertyListScreen() {
-    Navigator.pushReplacement(
+    Navigator.push(
       context,
       MaterialPageRoute(builder: (context) =>   DashBoard()),
     );

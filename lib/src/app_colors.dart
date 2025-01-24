@@ -169,4 +169,36 @@ const bodyColor5 = Color(0xffA073F3);
 
 
 
+Color get amber500 => const Color(0XFFFFC187);
+
+// Blue
+Color get blue50 => const Color(0XFFEAEFFF);
+Color get blue800 => const Color(0XFF1565C0);
+Color get blueA200 => const Color(0XFF4091FF);
+
+// BlueGray
+Color get blueGray300 => const Color(0XFF9098B1);
+
+// Gray
+Color get gray400 => const Color(0XFFC4C4C4);
+Color get gray50 => const Color(0XFFF9FCFC);
+
+// Indigo
+Color get indigo800 => const Color(0XFF283593);
+Color get indigoA200 => const Color(0XFF5B61F4);
+
+// LightBlue
+Color get lightBlue600 => const Color(0XFF039BE5);
+
+// Pink
+Color get pink300 => const Color(0XFFFB7181);
+
+// White
+Color get whiteA700 => const Color(0XFFFFFEFE);
+
+// Yellow
+Color get yellow700 => const Color(0XFFFFC732);
+
+
+
 

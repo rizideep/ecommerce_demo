@@ -312,7 +312,7 @@ class SignUpPageState extends State<SignUpPage>
           const SizedBox(height: 20),
           GestureDetector(
             onTap: () {
-              Navigator.pushReplacement(
+              Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => const LoginPage()),
               );
@@ -332,7 +332,7 @@ class SignUpPageState extends State<SignUpPage>
   }
 
   getOtpVerificationScreen() {
-    Navigator.pushReplacement(
+    Navigator.push(
       context,
       MaterialPageRoute(builder: (context) => const OtpVerificationScreen()),
     );

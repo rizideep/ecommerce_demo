@@ -3,12 +3,13 @@ import 'package:flutter/services.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:prop_olx/screens/login_page.dart';
 import 'package:prop_olx/splash.dart';
+import 'package:prop_olx/src/app_colors.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setSystemUIOverlayStyle(
       SystemUiOverlayStyle.light.copyWith(
-      statusBarColor: Colors.deepPurple, // Color for Android
+      statusBarColor: colorWhite, // Color for Android
       statusBarBrightness:
           Brightness.light // Dark == white status bar -- for IOS.
       ),);
@@ -25,7 +26,12 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(
+          seedColor:  const Color(0XFF40BFFF),
+
+          surface: colorWhite,
+
+        ),
         useMaterial3: true,
       ),
       initialRoute: '/splash',  // Start the app at the login screen

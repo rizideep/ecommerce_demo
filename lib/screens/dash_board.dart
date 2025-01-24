@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_lazy_indexed_stack/flutter_lazy_indexed_stack.dart';
-import 'package:prop_olx/screens/account.dart';
-import 'package:prop_olx/screens/cart.dart';
-import 'package:prop_olx/screens/explore.dart';
-import 'package:prop_olx/screens/offer.dart';
+import 'package:prop_olx/screens/dashboard/account.dart';
+import 'package:prop_olx/screens/dashboard/cart.dart';
+import 'package:prop_olx/screens/dashboard/explore.dart';
 
 import '../src/app_colors.dart';
 import '../utils/util.dart';
-import 'Home.dart';
+import 'dashboard/home.dart';
+
 
 class DashBoard extends StatefulWidget {
   var selectedIndex = 0;
@@ -26,7 +26,6 @@ class DashBoardState extends State<DashBoard> {
     const Home(),
     const Explore(),
     const Cart(),
-    const Offer(),
     const Account()
   ];
 

@@ -38,6 +38,7 @@ class LoginPageState extends State<LoginPage>
   late AnimationController _controller;
   late Animation<double> _fadeAnimation;
   late Animation<Offset> _slideAnimation;
+
 int ? userIdPref;
   @override
   void initState() {
@@ -290,7 +291,7 @@ int ? userIdPref;
   }
 
   getOtpVerificationsScreen() {
-    Navigator.pushReplacement(
+    Navigator.push(
       context,
       MaterialPageRoute(builder: (context) => const OtpVerificationScreen()),
     );
